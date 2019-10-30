@@ -3,20 +3,44 @@ const readlineSync = require("readline-sync");
 const MIN = 0.01;
 const MAX = 0.99;
 
-const quarters = 0.25
-const dimes = .10
-const nickels = .05
-const pennies = .01
+const QUARTERS = 0.25
+const DIMES = .10
+const NICKELS = .05
+const PENNYS = .01
 
-const amount = Number(readlineSync.question("\nEnter a dollar amount: "));
+let numberOfQuarters = 0;
+let numberOfDimes = 0;
+let numberOfNickels = 0;
+let numberOfPennys = 0;
+
+
+let amount = Number(readlineSync.question("\nEnter a dollar amount: "));
 
 if (Number.isNaN(amount)) {
-  console.log("\nInvalid.")
+  console.log("\nInvalid.");
 
 } else if (amount < MIN || amount > MAX) {
     console.log("\nInvalid")
-} else { (amount / quarters > MIN || amount / quarters < MAX)
-    quarterAmount = amount % (quarters + dimes + nickels + pennies);
+} else
+
+while (amount >= QUARTERS) {
+amount = amount - QUARTERS;
+numberOfQuarters++;
 }
 
-console.log("\nA(n) " + quarterAmount +" cent(s)." );
+while (amount >= DIMES) {
+  amount = amount - DIMES;
+  numberOfDimes++;
+}
+
+while (amount >= NICKELS) {
+  amount = amount - NICKELS;
+  numberOfNickels++;
+}
+
+while (amount >= PENNYS) {
+  amount = amount - PENNYS;
+  numberOfPennys++;
+}
+
+console.log("\n" + numberOfQuarters + " quarters, " + numberOfDimes + " dimes, " + numberOfNickels + " nickels, and " + numberOfPennys + " pennies.")
