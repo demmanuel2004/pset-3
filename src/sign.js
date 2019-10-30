@@ -16,5 +16,5 @@ else if (num < 0) {
 }
 
 else if (Number.isNaN(amount)) {
-  console.log("\nInvalid.")
-}
+  console.log("\nInvalid.");
+} 
