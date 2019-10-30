@@ -5,7 +5,6 @@ if ( num % 2 ==0) {
 	console.log("\nEven.\n");
 }
 
-
 else if (Number.isNaN(num)){
   console.log("\nInvalid.\n");
 }
