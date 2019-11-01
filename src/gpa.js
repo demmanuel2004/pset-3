@@ -1,42 +1,54 @@
 const readlineSync = require("readline-sync");
-const letter = Number(readlineSync.question("\nEnter a letter grade: "));
+const letter = String(readlineSync.question("\nEnter a letter grade: "));
 
-
-
-
-
-if (letter = A+)  {
-
-	console.log("\nYour GPA is a 0.00.\n");
-
+if (letter == "F")  {
+ console.log("\nYour GPA 0.00.\n");
 }
 
-else if (x >= 80 && x <= 89 )  {
-
-	console.log("\nYour GPA is a .\n");
-
+else if (letter == "A+" )  {
+ console.log("\nYour GPA is 4.00.\n");
 }
 
-else if (x >= 70 && x <= 79 )  {
-
-	console.log("\nYou recieved an C.\n");
-
+else if (letter == "A")  {
+  console.log("\nYour GPA is 4.00.\n");
 }
 
-else if (x >= 60 && x <= 69 )  {
-
-	console.log("\nYou recieved an D.\n");
-
+else if (letter == "B+")  {
+ console.log("\nYour GPA is 3.33.\n");
 }
 
-else if (x >= 0 && x <= 59 )  {
-
-	console.log("\nYou recieved an F.\n");
-
+else if (letter == "B-")  {
+ console.log("\nYour GPA is 2.67.\n");
 }
 
-else if (Number.isNaN(x)){
+else if (letter == "B") {
+	console.log("\nYour GPA is 3.00")
+}
 
-  console.log("\nInvalid.\n");
+else if (letter == "C")  {
+ console.log("\nYour GPA is 2.00.\n");
+}
 
+else if (letter == "C+")  {
+ console.log("\nYour GPA is 2.33.\n");
+}
+
+else if (letter == "C-")  {
+ console.log("\nYour GPA is 1.67.\n");
+}
+
+else if (letter == "D")  {
+ console.log("\nYour GPA is 1.00.\n");
+}
+
+else if (letter == "D+")  {
+ console.log("\nYour GPA is 1.33.\n");
+}
+
+else if (letter == "D-")  {
+ console.log("\nYour GPA is 0.67.\n");
+}
+
+else {
+ console.log("\nInvalid.\n");
 }
