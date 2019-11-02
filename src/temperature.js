@@ -2,8 +2,6 @@ const readlineSync = require("readline-sync");
 const temp = Number(readlineSync.question("\nEnter a temperature: "));
 const scale = String(readlineSync.question("\nEnter a scale: "));
 
-
-
 if (temp >= 32 && scale == "F")  {
 	console.log("\nLiquid.\n");
 }
@@ -42,8 +40,4 @@ else if (temp <= 0 && scale == "C" )  {
 
 else if (Number.isNaN(temp)){
   console.log("\nInvalid.\n");
-}
-
-else if (Number.isNan(temp)){
-	console.log("\nInvalid.\n")
 }
