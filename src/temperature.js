@@ -39,3 +39,11 @@ else if (temp >= 100 && scale == "C" )  {
 else if (temp <= 0 && scale == "C" )  {
 	console.log("\nSolid.\n");
 }
+
+else if (Number.isNaN(temp)){
+  console.log("\nInvalid.\n");
+}
+
+else if (Number.isNan(temp)){
+	console.log("\nInvalid.\n")
+}
