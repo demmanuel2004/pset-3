@@ -14,6 +14,6 @@ else if (num < 0) {
   console.log("\nNegative.\n");
 }
 
-else if (Number.isNaN(num)){
-  console.log("\nInvalid.\n");
+else if (Number.isNaN(num) || Number.isSafeInteger(number) != true){
+  console.log("\nInvalid.");
 }
