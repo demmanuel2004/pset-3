@@ -5,12 +5,16 @@ if (letter == "F")  {
  console.log("\nYour GPA 0.00.\n");
 }
 
-else if (letter == "A+" )  {
+else if (letter == "A+")  {
  console.log("\nYour GPA is 4.00.\n");
 }
 
 else if (letter == "A")  {
   console.log("\nYour GPA is 4.00.\n");
+}
+
+else if (letter == "A-") {
+  console.log("\nYour GPA is 3.67.\n");
 }
 
 else if (letter == "B+")  {
