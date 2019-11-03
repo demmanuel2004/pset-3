@@ -3,7 +3,7 @@ const num = Number(readlineSync.question("\nEnter a number: "));
 
 
 if ( num > 0) {
-	console.log("\npositive.\n");``
+  console.log("\npositive.\n");``
 }
 
 else if ( num == 0) {
