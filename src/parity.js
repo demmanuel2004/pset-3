@@ -1,11 +1,11 @@
 const readlineSync = require("readline-sync");
-const num = Number(readlineSync.question("\nEnter a number: "));
+const NUM = Number(readlineSync.question("\nEnter a number: "));
 
-if ( num % 2 ==0) {
+if ( NUM % 2 ==0) {
 	console.log("\nEven.\n");
 }
 
-else if (Number.isNaN(num)){
+else if (Number.isNaN(NUM)){
   console.log("\nInvalid.\n");
 }
 
