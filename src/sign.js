@@ -1,19 +1,19 @@
 const readlineSync = require("readline-sync");
-const num = Number(readlineSync.question("\nEnter a number: "));
+const NUM = Number(readlineSync.question("\nEnter a number: "));
 
 
-if ( num > 0) {
+if ( NUM > 0) {
   console.log("\npositive.\n");``
 }
 
-else if ( num == 0) {
+else if ( NUM == 0) {
   console.log("\nZero.\n");
 }
 
-else if (num < 0) {
+else if (NUM < 0) {
   console.log("\nNegative.\n");
 }
 
-else if (Number.isNaN(num)){
+else if (Number.isNaN(NUM)){
   console.log("\nInvalid.\n");
 }
