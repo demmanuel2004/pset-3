@@ -6,7 +6,6 @@ const MAX = 0.99;
 const QUARTERS = 0.25
 const DIMES = .10
 const NICKELS = .05
-const PENNYS = .01
 
 let numberOfQuarters = 0;
 let numberOfDimes = 0;
