@@ -37,8 +37,8 @@ while (amount >= NICKELS) {
   numberOfNickels++;
 }
 
-while (amount >= PENNYS) {
-  amount = amount - PENNYS;
+while (amount >= 0) {
+  amount = amount - 0.01;
   numberOfPennys++;
 }
 
