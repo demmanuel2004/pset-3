@@ -1,5 +1,5 @@
 const readlineSync = require("readline-sync");
-const MONTH = String(readlineSync.question("\nEnter a MONTH: "));
+const MONTH = String(readlineSync.question("\nEnter a month: "));
 
 
 if (MONTH == "jan" || MONTH == "Jan" || MONTH == "JAN")  {
