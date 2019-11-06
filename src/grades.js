@@ -26,4 +26,8 @@ else if (x >= 0 && x <= 59 )  {
 
 else if (Number.isNaN(x)){
   console.log("\nInvalid.\n");
+} 
+
+else if (amount < MIN || amount > MAX) {
+    console.log("\nInvalid.")
 }
