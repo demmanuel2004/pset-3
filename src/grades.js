@@ -28,6 +28,6 @@ else if (Number.isNaN(x)){
   console.log("\nInvalid.\n");
 } 
 
-else if (amount < MIN || amount > MAX) {
+else if (x < MIN || x > MAX) {
     console.log("\nInvalid.")
 }
