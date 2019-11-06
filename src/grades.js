@@ -1,8 +1,8 @@
 const readlineSync = require("readline-sync");
 const x = Number(readlineSync.question("\nEnter a grade: "));
 
-const MIN = 0.01;
-const MAX = 0.99;
+const MIN = 0;
+const MAX = 100;
 
 if (x >= 90 && x <= 100 )  {
 	console.log("\nYou recieved an A.\n");
