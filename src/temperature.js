@@ -1,43 +1,43 @@
 const readlineSync = require("readline-sync");
-const temp = Number(readlineSync.question("\nEnter a temperature: "));
-const scale = String(readlineSync.question("\nEnter a scale: "));
+const TEMP = Number(readlineSync.question("\nEnter a temperature: "));
+const SCALE = String(readlineSync.question("\nEnter a scale: "));
 
-if (temp >= 32 && temp < 212 && scale == "F")  {
+if (TEMP >= 32 && TEMP < 212 && SCALE == "F")  {
 	console.log("\nLiquid.\n");
 }
 
-else if (temp >= 212 && scale == "F" )  {
+else if (TEMP >= 212 && SCALE == "F" )  {
 	console.log("\nGas.\n");
 }
 
-else if (temp <= 32 && scale == "F" )  {
+else if (TEMP <= 32 && SCALE == "F" )  {
 	console.log("\nSolid.\n");
 }
 
-if (temp >= 273 && temp < 373 && scale == "K")  {
+if (TEMP >= 273 && TEMP < 373 && SCALE == "K")  {
 	console.log("\nLiquid.\n");
 }
 
-else if (temp >= 373 && scale == "K" )  {
+else if (TEMP >= 373 && SCALE == "K" )  {
 	console.log("\nGas.\n");
 }
 
-else if (temp <= 273 && scale == "K" )  {
+else if (TEMP <= 273 && SCALE == "K" )  {
 	console.log("\nSolid.\n");
 }
 
-if (temp >= 0 && temp < 100 && scale == "C")  {
+if (TEMP >= 0 && TEMP < 100 && SCALE == "C")  {
 	console.log("\nLiquid.\n");
 }
 
-else if (temp >= 100 && scale == "C" )  {
+else if (TEMP >= 100 && SCALE == "C" )  {
 	console.log("\nGas.\n");
 }
 
-else if (temp <= 0 && scale == "C" )  {
+else if (TEMP <= 0 && SCALE == "C" )  {
 	console.log("\nSolid.\n");
 }
 
-else if (Number.isNaN(temp)){
+else if (Number.isNaN(TEMP)){
   console.log("\nInvalid.\n");
 }
