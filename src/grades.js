@@ -1,5 +1,5 @@
 const readlineSync = require("readline-sync");
-const x = Number(readlineSync.question("\nEnter a number: "));
+const x = Number(readlineSync.question("\nEnter a grade: "));
 
 
 if (x >= 90 && x <= 100 )  {
