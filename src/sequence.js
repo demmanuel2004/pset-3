@@ -18,7 +18,7 @@ else if (INTEGER == SECOND_INTEGER && SECOND_INTEGER == THIRD_INTEGER) {
     console.log("\nEqual.");
 }
 
-else if (INTEGER - SECOND_INTEGER == SECOND_INTEGER - THIRD_INTEGER && THIRD_INTEGER > SECOND_INTEGER == SECOND_INTEGER > INTEGER) {
+else if (INTEGER - SECOND_INTEGER == SECOND_INTEGER - THIRD_INTEGER && THIRD_INTEGER > SECOND_INTEGER && SECOND_INTEGER > INTEGER) {
   console.log("\nStrictly increasing");
 }
 
@@ -37,3 +37,4 @@ else if (INTEGER > SECOND_INTEGER && SECOND_INTEGER > THIRD_INTEGER) {
 else {
  console.log("\nUnordered.");
 }
+
