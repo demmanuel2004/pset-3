@@ -83,6 +83,5 @@ if (cardLowerCase.length == 2) {
     }
 }
 else {
-    console.log("\nInvalid.");
-    console.log("other test");
+    console.log("\nInvalid.")
 }
