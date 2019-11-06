@@ -41,3 +41,7 @@ else if (TEMP <= 0 && SCALE == "C" )  {
 else if (Number.isNaN(TEMP)){
   console.log("\nInvalid.\n");
 }
+
+else if (String.isNaN(SCALE)){
+  console.log("\nInvalid.\n");
+}
